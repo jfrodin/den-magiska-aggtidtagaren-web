@@ -1,0 +1,112 @@
+/* Bakgrund och layout */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: url('assets/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+  }
+  
+  .app-wrapper {
+    background-color: rgba(255, 248, 220, 0.9); /* äggskalston */
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Rubrik */
+  h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Sektioner */
+  .selector-group,
+  .slider-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Knappar för kokgrad/temperatur */
+  .button-group {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .button-group button {
+    padding: 10px 16px;
+    border: none;
+    border-radius: 12px;
+    background-color: #eee;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .button-group button.active {
+    background-color: #f9c74f;
+    font-weight: bold;
+  }
+  
+  /* Slider */
+  input[type="range"] {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  /* Timerdisplay */
+  #timer-display {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin: 1.5rem 0;
+  }
+  
+  /* Kontrollknapp – EN knapp med färg som byts med JS */
+  .button-controls {
+    text-align: center;
+  }
+  
+  #control-btn {
+    padding: 12px 28px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Status-färger (läggs till via JS) */
+  .start-mode {
+    background-color: #90be6d; /* grönt */
+  }
+  
+  .stop-mode {
+    background-color: #f94144; /* rött */
+  }
+  
+  .reset-mode {
+    background-color: #577590; /* blågrått */
+  }
+  
+  /* Info-text */
+  .info-text {
+    text-align: center;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    color: #666;
+  }
+  

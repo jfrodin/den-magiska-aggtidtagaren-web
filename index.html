@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Den magiska äggtidtagaren</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/favicon.png" />
+</head>
+<body>
+  <div class="app-wrapper">
+    <h1>Den magiska äggtidtagaren</h1>
+
+    <div class="content-box">
+      <!-- Kokgrad -->
+      <div class="selector-group">
+        <label>Kokgrad:</label>
+        <div class="button-group" id="softness-selector">
+          <button data-softness="soft" class="active">Löskokt</button>
+          <button data-softness="medium">Medium</button>
+          <button data-softness="hard">Hårdkokt</button>
+        </div>
+      </div>
+
+      <!-- Temperatur -->
+      <div class="selector-group">
+        <label>Temperatur:</label>
+        <div class="button-group" id="temp-selector">
+          <button data-temp="room" class="active">Rumstemperatur</button>
+          <button data-temp="fridge">Kylskåp</button>
+        </div>
+      </div>
+
+      <!-- Vikt -->
+      <div class="slider-group">
+        <label for="weight">Vikt: <span id="weight-value">50</span> g</label>
+        <input type="range" id="weight" min="40" max="80" value="50" />
+      </div>
+
+      <!-- Timer -->
+      <div id="timer-display">Koka ägget i 06:00</div>
+
+      <!-- Kontrollknapp -->
+      <div class="button-controls">
+        <button id="control-btn">Starta</button>
+      </div>
+    </div>
+
+    <!-- Info -->
+    <p class="info-text">⏱️ Tiden gäller från det att ägget läggs i kokande vatten.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
